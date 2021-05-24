@@ -3,8 +3,10 @@ package com.anton.antonhito.entity;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(name="user")
 public class User {
 	@Id
 	@Column(name = "id")
@@ -18,6 +20,10 @@ public class User {
 	@Column(name = "apellidos")
 	private String apellidos;
 
+	public User() {
+		
+	}
+	
 	public User(int id, String user, String pass, String name, String apellidos) {
 		super();
 		this.id = id;

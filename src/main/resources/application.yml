@@ -1,9 +1,0 @@
-spring:
-    datasource:
-        driverClassName: com.mysql.cj.jdbc.Driver
-        url: jdbc:mysql://localhost:3306/manolito?serverTimezone=Europe/Madrid
-        username: root
-        password: 
-    jpa:
-        hibernate:
-            ddl-auto: update
